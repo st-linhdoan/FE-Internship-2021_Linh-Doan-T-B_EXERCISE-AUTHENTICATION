@@ -6,7 +6,7 @@ interface IProps {
   validate: any,
   type: string,
   errors?: any,
-  para?: string 
+  para: string 
 }
 const Input = (props: IProps) => {
   const { placehoderName, validate, type, errors, para } = props;
