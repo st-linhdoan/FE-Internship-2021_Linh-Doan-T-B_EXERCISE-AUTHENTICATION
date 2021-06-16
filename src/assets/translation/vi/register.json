@@ -1,3 +1,22 @@
 {
-  "register-title": "Đăng kí"
+  "register-title": "Đăng kí",
+  "Name": "Tên",
+  "Email": "Email",
+  "Age": "Tuổi",
+  "Adrress": "Địa chỉ",
+  "Password": "Mật khẩu",
+  "Confirm password": "Nhập lại mật khẩu",
+  "You must specify a name": "Bạn phải nhập tên",
+  "You must specify a email": "Bạn phải nhập email",
+  "You must specify a age": "Bạn phải nhập tuổi",
+  "You must specify a address": "Bạn phải nhập địa chỉ",
+  "You must specify a password": "Bạn phải nhập mật khẩu",
+  "Not enough age limit": "Chưa đủ tuổi để đăng kí",
+  "Over the age limit": "Quá số tuổi quy định để đăng kí",
+  "Invalid password format": "Mật khẩu chưa đúng định dạng",
+  "Password must have at least 8 characters": "Mật khẩu ít nhất là 8 kí tự",
+  "The passwords do not match": "Mật khẩu không trùng khớp",
+  "You must accept the terms of registration": "Bạn phải chấp nhận các điều khoản để đăng ký",
+  "I Agree with the terms of services": "Tôi đồng ý với các điều khoản dịch vụ",
+  "Create account": "Tạo tài khoản"
 }
