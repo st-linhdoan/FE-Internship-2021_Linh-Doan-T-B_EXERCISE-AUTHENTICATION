@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 const Login = () => {
   const { t } = useTranslation();
-  return <div>{t("Login")}</div>;
+  return <div>{t("login-title")}</div>;
 };
 
 export default Login;

@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 const Register = () => {
   const { t } = useTranslation();
-  return <div>{t("Register")}</div>;
+  return <div>{t("register-title")}</div>;
 };
 
 export default Register;

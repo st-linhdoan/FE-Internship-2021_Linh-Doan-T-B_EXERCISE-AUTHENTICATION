@@ -4,7 +4,7 @@ import i18n from 'i18next';
 
 function App(props: any) {
   const { t } = useTranslation();
-  const [laguage, setLanguage] = useState("en");
+  const [laguage, setLanguage] = useState('en');
   const changeLang = (lang: string) => {
     i18n.changeLanguage(lang);
     setLanguage(lang);
@@ -15,7 +15,6 @@ function App(props: any) {
         <option value="en">{t('EN')}</option>
         <option value="vi">{t('VI')}</option>
       </select>
-      <h2>{t("Welcome to React")}</h2>
       {props.children}
     </div>
   );
