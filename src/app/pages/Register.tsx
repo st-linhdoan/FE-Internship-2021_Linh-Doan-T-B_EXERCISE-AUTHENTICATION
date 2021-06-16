@@ -43,7 +43,7 @@ const Register = () => {
         },
         max: {
           value: 60,
-          message: "Over the age limit ",
+          message: "Over the age limit",
         },
       }),
       type: "text",
@@ -101,7 +101,7 @@ const Register = () => {
     <div className="form register-form">
       <div className="form-inner register-inner">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <h2 className="title">{t("Register")}</h2>
+          <h2 className="title">{t("register-title")}</h2>
           {listRender.map((item) => (
             <Input
               placehoderName={t(item.placehoderName)}

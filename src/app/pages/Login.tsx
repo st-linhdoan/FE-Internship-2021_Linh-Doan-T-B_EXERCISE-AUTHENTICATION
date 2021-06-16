@@ -46,7 +46,7 @@ const Login = () => {
     <div className="form login">
       <div className="form-inner login-inner">
         <form onSubmit={handleSubmit(onSubmit)}>
-          <h2 className="title">Login</h2>
+          <h2 className="title">{t("login-title")}</h2>
           {listRender.map((item) => (
             <Input
               placehoderName={t(item.placehoderName)}
@@ -56,7 +56,7 @@ const Login = () => {
               para={t(item.para)}
             />
           ))}
-          <Button className={"btn btn-default"} nameBtn={"Login"} />
+          <Button className={"btn btn-default"} nameBtn={t("login-title")} />
         </form>
       </div>
     </div>

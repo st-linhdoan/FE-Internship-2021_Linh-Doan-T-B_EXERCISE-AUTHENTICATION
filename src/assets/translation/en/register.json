@@ -1,0 +1,22 @@
+{
+  "register-title": "Register",
+  "Name": "Name",
+  "Email": "Email",
+  "Age": "Age",
+  "Adrress": "Adrress",
+  "Password": "Password",
+  "Confirm password": "Confirm password",
+  "You must specify a name": "You must specify a name",
+  "You must specify a email": "You must specify a email",
+  "You must specify a age": "You must specify a age",
+  "You must specify a address": "You must specify a adrress",
+   "You must specify a password": "You must specify a password",
+  "Not enough age limit": "Not enough age limit",
+  "Over the age limit": "Over the age limit",
+  "Invalid password format": "Invalid password format",
+  "Password must have at least 8 characters": "Password must have at least 8 characters",
+  "The passwords do not match": "The passwords do not match",
+  "You must accept the terms of registration": "You must accept the terms of registration",
+  "I Agree with the terms of services": "I Agree with the terms of services",
+  "Create account": "Create account"
+}
