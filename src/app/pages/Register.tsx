@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import Input from "../share/component/modules/Input";
 import Button from "../share/component/partials/Button";
 
@@ -65,7 +66,7 @@ const Register = () => {
         required: "errors.required.password",
         pattern: {
           value: /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/,
-          message: "erroes.password.format",
+          message: "errors.password.format",
         },
         minLength: {
           value: 8,
@@ -111,6 +112,7 @@ const Register = () => {
             />
           ))}
           <Button className={"btn btn-default"} nameBtn={t("btn.register")} />
+          <p className="link-sign-in">Already have an account? <Link to='/login'>Sign In</Link></p>
         </form>
       </div>
     </div>
