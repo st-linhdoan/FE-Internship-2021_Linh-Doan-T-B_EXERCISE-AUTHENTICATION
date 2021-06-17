@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 import Button from "../share/component/partials/Button";
 import Input from "../share/component/modules/Input";
+import axios from "axios";
 
 const Login = () => {
   const { t } = useTranslation();
@@ -15,7 +16,12 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data: any) => console.log(data);
+  const onSubmit = (data: any) => {
+    axios.post('http://localhost:8000/users',data)
+    .then((res) => {
+      console.log(res);
+    })
+  };
 
   const listRender = [
     {

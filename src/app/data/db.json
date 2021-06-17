@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "name": "Linh",
+      "email": "linh@gmail.com",
+      "age": "25",
+      "address": "47/1 hvt",
+      "password": "Linh123$",
+      "confirm_password": "Linh123$",
+      "checkbox": true,
+      "id": 1
+    },
+    {
+      "name": "Linh",
+      "email": "linh@gmail.com",
+      "age": "25",
+      "address": "47 htv",
+      "password": "Linh123$",
+      "confirm_password": "Linh123$",
+      "checkbox": true,
+      "id": 2
+    }
+  ]
+}

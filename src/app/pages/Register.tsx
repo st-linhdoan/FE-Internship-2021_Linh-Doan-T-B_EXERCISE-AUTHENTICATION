@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useRef } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
@@ -17,8 +18,12 @@ const Register = () => {
   const password = useRef({});
   password.current = watch("password", "");
 
-  const onSubmit = (data: any) => console.log(data);
-
+  const onSubmit = (data: any) => {
+    axios.post('http://localhost:8000/register',data)
+    .then((res)=>{
+      console.log(res)
+    })
+  }
   const listRender = [
     {
       placehoderName: "filed.name",
