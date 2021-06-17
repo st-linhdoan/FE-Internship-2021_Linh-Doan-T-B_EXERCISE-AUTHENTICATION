@@ -71,7 +71,7 @@ const Register = () => {
         required: "errors.required.password",
         pattern: {
           value: /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/,
-          message: "erroes.password.format",
+          message: "errors.password.format",
         },
         minLength: {
           value: 8,
