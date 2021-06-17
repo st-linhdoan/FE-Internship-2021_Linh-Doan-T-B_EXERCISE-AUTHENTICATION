@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
+import './assets/stylesheet/style.scss'
 
 function App(props: any) {
   const { t } = useTranslation();

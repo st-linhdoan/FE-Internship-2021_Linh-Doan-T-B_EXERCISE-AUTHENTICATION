@@ -1,0 +1,15 @@
+.login {
+  padding: 80px 0;
+  .login-inner {
+    form {
+      padding: 50px;
+    }
+    .link-sign-up {
+      padding-top: 20px;
+      font-size: 14px;
+      a {
+        color: map-get($color, white-color);
+      }
+    }
+  }
+}
