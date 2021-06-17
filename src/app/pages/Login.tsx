@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
+import { Link } from 'react-router-dom';
 
 import Button from "../share/component/partials/Button";
 import Input from "../share/component/modules/Input";
@@ -57,6 +58,7 @@ const Login = () => {
             />
           ))}
           <Button className={"btn btn-default"} nameBtn={t("login-title")} />
+          <p className="link-sign-up">Do not have an account? <Link to="/register">Sign up</Link> </p>
         </form>
       </div>
     </div>
