@@ -20,30 +20,30 @@ const Register = () => {
 
   const listRender = [
     {
-      placehoderName: "Name",
-      validate: register("name", { required: "You must specify a name" }),
+      placehoderName: "filed.name",
+      validate: register("name", { required: "errors.required.name" }),
       type: "text",
       errors: errors.name,
       para: "",
     },
     {
-      placehoderName: "Email",
-      validate: register("email", { required: "You must specify a email" }),
+      placehoderName: "filed.email",
+      validate: register("email", { required: "errors.required.email" }),
       type: "email",
       errors: errors.email,
       para: "",
     },
     {
-      placehoderName: "Age",
+      placehoderName: "filed.age",
       validate: register("age", {
-        required: "You must specify a age",
+        required: "errors.required.age",
         min: {
           value: 16,
-          message: "Not enough age limit",
+          message: "errors.age.min",
         },
         max: {
           value: 60,
-          message: "Over the age limit",
+          message: "errors.age.max",
         },
       }),
       type: "text",
@@ -51,25 +51,25 @@ const Register = () => {
       para: "",
     },
     {
-      placehoderName: "Adrress",
+      placehoderName: "filed.adrress",
       validate: register("address", {
-        required: "You must specify a address",
+        required: "errors.required.address",
       }),
       type: "text",
       errors: errors.address,
       para: "",
     },
     {
-      placehoderName: "Password",
+      placehoderName: "filed.password",
       validate: register("password", {
-        required: "You must specify a password",
+        required: "errors.required.password",
         pattern: {
           value: /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/,
-          message: "Invalid password format",
+          message: "erroes.password.format",
         },
         minLength: {
           value: 8,
-          message: "Password must have at least 8 characters",
+          message: "errors.password.characters",
         },
       }),
       type: "password",
@@ -77,10 +77,10 @@ const Register = () => {
       para: "",
     },
     {
-      placehoderName: "Confirm password",
+      placehoderName: "filed.confirm-password",
       validate: register("confirm_password", {
         validate: (value) =>
-          value === password.current || "The passwords do not match",
+          value === password.current || "errors.password.match",
       }),
       type: "password",
       errors: errors.confirm_password,
@@ -89,12 +89,11 @@ const Register = () => {
     {
       placehoderName: "",
       validate: register("checkbox", {
-        required: "You must accept the terms of registration",
+        required: "errors.required.accept",
       }),
-
       type: "checkbox",
       errors: errors.checkbox,
-      para: "I Agree with the terms of services",
+      para: "terms-service",
     },
   ];
   return (
@@ -111,7 +110,7 @@ const Register = () => {
               para={t(item.para)}
             />
           ))}
-          <Button className={"btn btn-default"} nameBtn={t("Create account")} />
+          <Button className={"btn btn-default"} nameBtn={t("btn.register")} />
         </form>
       </div>
     </div>
