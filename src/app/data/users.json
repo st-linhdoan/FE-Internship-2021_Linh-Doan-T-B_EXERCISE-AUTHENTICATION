@@ -1,79 +1,8 @@
 {
   "users": [
     {
-      "id": 1,
-      "email": "bruno@email.com",
-      "password": "Bruno12!"
-    },
-    {
-      "id": 2,
-      "email": "techie@email.com",
-      "password": "techie"
-    },
-    {
-      "id": 3,
-      "email": "nilson@email.com",
-      "password": "nilson"
-    },
-    {
-      "id": 4,
-      "email": "nilson1@email.com",
-      "password": "nilson"
-    },
-    {
-      "id": 5,
-      "email": "nilson2@email.com",
-      "password": "nilson"
-    },
-    {
-      "id": 6,
-      "email": "nilson3@email.com",
-      "password": "nilson"
-    },
-    {
-      "id": 7,
-      "email": "nilson4@email.com",
-      "password": "nilson"
-    },
-    {
-      "id": 8,
-      "email": "nilson7@email.com",
-      "password": "nilson"
-    },
-    {
-      "id": 9,
-      "email": "nilson8@email.com",
-      "password": "nilson"
-    },
-    {
-      "name": "Lunh",
-      "email": "linh@gmail.com",
-      "age": "23",
-      "address": "47 hvt",
-      "password": "Linh123$",
-      "confirm_password": "Linh123$",
-      "checkbox": true,
-      "id": 10
-    },
-    {
-      "name": "Linh",
-      "email": "linhdoan@gmail.com",
-      "age": "24",
-      "address": "47 hvt",
-      "password": "Linh123$",
-      "confirm_password": "Linh123$",
-      "checkbox": true,
-      "id": 11
-    },
-    {
-      "name": "linh",
-      "email": "linhdoan24@gmail.com",
-      "age": "24",
-      "address": "47 hvt",
-      "password": "Linh2510!",
-      "confirm_password": "Linh2510!",
-      "checkbox": true,
-      "id": 12
+    "email":"Linh@gmail.com",
+    "password":"Linh123$"
     }
   ]
 }

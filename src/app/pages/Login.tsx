@@ -13,11 +13,11 @@ const Login = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
-  } = useForm();
+    formState: { errors,  isDirty, isValid  },
+  } = useForm({ mode: 'onBlur', reValidateMode: 'onBlur' });
 
   const onSubmit = (data: any) => {
-    axios.post('http://localhost:8000/login',data)
+    axios.post('http://localhost:8000/auth/login',data)
     .then((res) => {
       console.log(res);
     })
@@ -63,8 +63,8 @@ const Login = () => {
               para={t(item.para)}
             />
           ))}
-          <Button className={"btn btn-default"} nameBtn={t("login-title")} />
-          <p className="link-sign-up">Do not have an account? <Link to="/register">Sign up</Link> </p>
+           <Button disabled={!isValid || !isDirty}  className={!isValid || !isDirty ? "btn btn-disable" : "btn btn-default"} nameBtn={t("login-title")} />
+          <p className="link-sign-up">{t('question-login.account')} <Link to="/register">{t('link-name-login.sign-up')}</Link> </p>
         </form>
       </div>
     </div>

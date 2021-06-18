@@ -19,16 +19,27 @@
     },
     "age": {
       "min": "Not enough age limit",
-      "max": "Over the age limit"
+      "max": "Over the age limit",
+      "format": "Please enter number for age."
+    },
+    "email": {
+      "format": "Invalid email format"
     },
     "password": {
-      "formart": "Invalid password format",
+      "format": "Invalid password format",
       "characters": "Password must have at least 8 characters",
       "match": "The passwords do not match"
     }
+  
   },
-  "terms-service": "I agree with the terms of services",
+  "question": {
+    "terms-service": "I agree with the terms of services",
+    "account": "Already have an account?"
+  },
   "btn":{
     "register": "Create account"
+  },
+  "link-name": {
+    "sign-in": "Sign in"
   }
 }

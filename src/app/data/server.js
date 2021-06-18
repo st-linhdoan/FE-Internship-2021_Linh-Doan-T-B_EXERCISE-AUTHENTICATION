@@ -1,11 +1,12 @@
 const fs = require("fs");
+const path = require('path')
 const bodyParser = require("body-parser");
 const jsonServer = require("json-server");
 const jwt = require("jsonwebtoken");
 
 const server = jsonServer.create();
-const router = jsonServer.router("src/app/data/db.json");
-const userdb = JSON.parse(fs.readFileSync("src/app/data/users.json", "UTF-8"));
+const router = jsonServer.router(path.join(__dirname,"db.json"));
+const userdb = JSON.parse(fs.readFileSync(path.join(__dirname, "users.json"), "UTF-8"));
 
 server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
