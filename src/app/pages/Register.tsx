@@ -19,7 +19,7 @@ const Register = () => {
   password.current = watch("password", "");
 
   const onSubmit = (data: any) => {
-    axios.post('http://localhost:8000/register',data)
+    axios.post('http://localhost:8000/users',data)
     .then((res)=>{
       console.log(res)
     })
