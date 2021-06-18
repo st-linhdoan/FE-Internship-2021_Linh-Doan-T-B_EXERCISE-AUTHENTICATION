@@ -40,5 +40,8 @@
   },
     "link-name": {
     "sign-in": "Đăng nhập"
+  },
+  "notify-register": {
+    "success": "Đăng kí thành công"
   }
 }

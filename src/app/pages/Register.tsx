@@ -1,12 +1,13 @@
 import axios from "axios";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Input from "../share/component/modules/Input";
 import Button from "../share/component/partials/Button";
 
 const Register = () => {
+  const history = useHistory();
   const { t } = useTranslation();
   const {
     register,
@@ -23,9 +24,9 @@ const Register = () => {
       email: data.email,
       password: data.password
     }
-    axios.post('http://localhost:8000/auth/register', register)
+    axios.post('http://localhost:4000/users', register)
     .then((res)=>{
-      console.log(res)
+      history.push('/',"notify-register.success");
     })
   }
   const listRender = [
@@ -116,6 +117,7 @@ const Register = () => {
     },
   ];
   return (
+    <>
     <div className="form register-form">
       <div className="form-inner register-inner">
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -134,6 +136,8 @@ const Register = () => {
         </form>
       </div>
     </div>
+
+    </>
   );  
 };
 

@@ -1,3 +1,34 @@
 {
- "users": []
+  "users": [
+    {
+      "email": "linh@gmail.com",
+      "password": "$2a$10$aQvXaMnUh2IEF7LGEvB0c.kAs3iT0xv4mS.U6cKfyAn75Trbx7ug6",
+      "id": 1
+    },
+    {
+      "email": "linhdoan98@gmail.com",
+      "password": "$2a$10$4CW3SdAC4YPk.sYbu0yWf.qX0C1ej58JGJexkOL1c4QDUh1L16En6",
+      "id": 2
+    },
+    {
+      "email": "linh98@gmail.com",
+      "password": "$2a$10$qvwx0cfWWkijOlTy0Xpq0.pFVJSpu3RQ6szB/Mo0PDB9jRmCk8D2C",
+      "id": 3
+    },
+    {
+      "email": "lin98@gmail.com",
+      "password": "$2a$10$46j9aSRfjN6BCSVQIoCDHuuf6aX3pwzmZ5BSLRwavEOLTvDa6Lw/m",
+      "id": 4
+    },
+    {
+      "email": "a@gmail.com",
+      "password": "$2a$10$avBzS0a2.lw9tFs1WU/FRusY5nLOGvnb/p0tvwHf9C8ExiUvYNkba",
+      "id": 5
+    },
+    {
+      "email": "lin@gmail.com",
+      "password": "$2a$10$BDLEqGXXmQ708VQDZAYmIeNRoiXnkFXy.7OptiPYdIMcK4/F3hoJy",
+      "id": 6
+    }
+  ]
 }

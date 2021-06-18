@@ -41,5 +41,8 @@
   },
   "link-name": {
     "sign-in": "Sign in"
+  },
+  "notify-register": {
+    "success": "Register success"
   }
 }

@@ -5,5 +5,8 @@
   },
   "link-name-login": {
     "sign-up": "Sign Up"
+  },
+  "notify-login": {
+    "success": "Login success"
   }
 }

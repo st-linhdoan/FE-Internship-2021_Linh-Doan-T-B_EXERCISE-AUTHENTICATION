@@ -5,5 +5,8 @@
   },
   "link-name-login": {
     "sign-up": "Đăng kí"
+  },
+  "notify-login": {
+    "success": "Đăng nhập thành công"
   }
 }
