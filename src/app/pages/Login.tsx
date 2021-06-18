@@ -12,35 +12,40 @@ const Login = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
-  } = useForm();
+    formState: { errors,  isDirty, isValid  },
+  } = useForm({ mode: 'onBlur', reValidateMode: 'onBlur' });
 
   const onSubmit = (data: any) => console.log(data);
 
   const listRender = [
     {
-      placehoderName: "filed.email",
-      validate: register("email", { required: "errors.required.email" }),
-      type: "email",
+      placehoderName: 'filed.email',
+      validate: register('email', { 
+        required: 'errors.required.email', 
+         pattern: {
+          value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+          message: 'errors.email.format',
+        }, }),
+      type: 'text',
       errors: errors.email,
-      para: "",
+      para: '',
     },
     {
-      placehoderName: "filed.password",
-      validate: register("password", {
-        required: "errors.required.password",
+      placehoderName:'filed.password',
+      validate: register('password', {
+        required:'errors.required.password',
         pattern: {
           value: /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{8,}$/,
-          message: "erroes.password.format",
+          message:'erroes.password.format',
         },
         minLength: {
           value: 8,
-          message: "errors.password.characters",
+          message:'errors.password.characters',
         },
       }),
-      type: "password",
+      type:'password',
       errors: errors.password,
-      para: "",
+      para:'',
     },
   ];
   return (
@@ -57,8 +62,8 @@ const Login = () => {
               para={t(item.para)}
             />
           ))}
-          <Button className={"btn btn-default"} nameBtn={t("login-title")} />
-          <p className="link-sign-up">Do not have an account? <Link to="/register">Sign up</Link> </p>
+           <Button disabled={!isValid || !isDirty}  className={!isValid || !isDirty ? "btn btn-disable" : "btn btn-default"} nameBtn={t("login-title")} />
+          <p className="link-sign-up">{t('question-login.account')} <Link to="/register">{t('link-name-login.sign-up')}</Link> </p>
         </form>
       </div>
     </div>
