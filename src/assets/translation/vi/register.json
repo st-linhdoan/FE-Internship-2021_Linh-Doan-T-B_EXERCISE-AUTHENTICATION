@@ -19,16 +19,26 @@
     },
     "age": {
       "min": "Chưa đủ tuổi để đăng kí",
-      "max": "Quá số tuổi quy định để đăng kí"
+      "max": "Quá số tuổi quy định để đăng kí",
+      "format": "Vui lòng nhập số"
     },
     "password": {
       "format": "Mật khẩu chưa đúng định dạng",
       "characters": "Mật khẩu ít nhất là 8 kí tự",
       "match": "Mật khẩu không trùng khớp"
+    },
+    "email":{
+      "format": "Email chưa đúng định dạng"
     }
   },
-  "terms-service": "Tôi đồng ý với các điều khoản dịch vụ",
+  "question": {
+    "terms-service": "Tôi đồng ý với các điều khoản dịch vụ",
+     "account": "Bạn đã có tài khoản?"
+  },
   "btn": {
     "register": "Tạo tài khoản"
+  },
+    "link-name": {
+    "sign-in": "Đăng nhập"
   }
 }
