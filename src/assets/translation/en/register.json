@@ -1,3 +1,48 @@
 {
-  "register-title": "Register"
+  "register-title": "Register",
+  "filed": {
+    "name": "Name",
+    "email": "Email",
+    "age": "Age",
+    "adrress": "Adrress",
+    "password": "Password",
+    "confirm-password": "Confirm password"
+  },
+  "errors": {
+    "required": {
+      "name": "You must specify a name",
+      "email": "You must specify a email",
+      "age": "You must specify a age",
+      "address": "You must specify a adrress",
+      "password": "You must specify a password",
+      "accept": "You must accept the terms of registration"
+    },
+    "age": {
+      "min": "Not enough age limit",
+      "max": "Over the age limit",
+      "format": "Please enter number for age."
+    },
+    "email": {
+      "format": "Invalid email format"
+    },
+    "password": {
+      "format": "Invalid password format",
+      "characters": "Password must have at least 8 characters",
+      "match": "The passwords do not match"
+    }
+  
+  },
+  "question": {
+    "terms-service": "I agree with the terms of services",
+    "account": "Already have an account?"
+  },
+  "btn":{
+    "register": "Create account"
+  },
+  "link-name": {
+    "sign-in": "Sign in"
+  },
+  "notify-register": {
+    "success": "Register success"
+  }
 }

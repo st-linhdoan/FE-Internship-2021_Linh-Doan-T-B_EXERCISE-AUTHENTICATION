@@ -1,3 +1,47 @@
 {
-  "register-title": "Đăng kí"
+  "register-title": "Đăng kí",
+  "filed": {
+    "name": "Tên",
+    "email": "Email",
+    "age": "Tuổi",
+    "adrress": "Địa chỉ",
+    "password": "Mật khẩu",
+    "confirm-password": "Nhập lại mật khẩu"
+  },
+  "errors": {
+    "required":{
+      "name": "Bạn phải nhập tên",
+      "email": "Bạn phải nhập email",
+      "age": "Bạn phải nhập tuổi",
+      "address": "Bạn phải nhập địa chỉ",
+      "password": "Bạn phải nhập mật khẩu",
+      "accept": "Bạn phải chấp nhận các điều khoản để đăng ký"
+    },
+    "age": {
+      "min": "Chưa đủ tuổi để đăng kí",
+      "max": "Quá số tuổi quy định để đăng kí",
+      "format": "Vui lòng nhập số"
+    },
+    "password": {
+      "format": "Mật khẩu chưa đúng định dạng",
+      "characters": "Mật khẩu ít nhất là 8 kí tự",
+      "match": "Mật khẩu không trùng khớp"
+    },
+    "email":{
+      "format": "Email chưa đúng định dạng"
+    }
+  },
+  "question": {
+    "terms-service": "Tôi đồng ý với các điều khoản dịch vụ",
+     "account": "Bạn đã có tài khoản?"
+  },
+  "btn": {
+    "register": "Tạo tài khoản"
+  },
+    "link-name": {
+    "sign-in": "Đăng nhập"
+  },
+  "notify-register": {
+    "success": "Đăng kí thành công"
+  }
 }

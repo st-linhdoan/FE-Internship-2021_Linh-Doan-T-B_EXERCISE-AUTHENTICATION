@@ -1,0 +1,10 @@
+.notifi-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  font-size: 30px;
+  font-weight: 700px;
+  color: map-get($color, btn-color);
+}

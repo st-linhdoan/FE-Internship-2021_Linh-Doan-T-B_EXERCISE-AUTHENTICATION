@@ -1,3 +1,12 @@
 {
-  "login-title": "Login"
+  "login-title": "Login",
+  "question-login": {
+    "account": "Don't have an account? "
+  },
+  "link-name-login": {
+    "sign-up": "Sign Up"
+  },
+  "notify-login": {
+    "success": "Login success"
+  }
 }

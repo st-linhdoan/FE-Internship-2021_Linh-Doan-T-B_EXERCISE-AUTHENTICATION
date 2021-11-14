@@ -1,0 +1,43 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.title {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: map-get($color, white-color);
+  margin: 0 0 15px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+  &::before {
+    content: "";
+    height: 1px;
+    width: 30%;
+    background: map-get($color, line-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+  }
+  &::after {
+    content: "";
+    height: 1px;
+    width: 30%;
+    background: map-get($color, line-color);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 2;
+  }
+}
+@media only screen and (max-width: map-get($breakpoint, sm )) {
+  .title { 
+    &::before { 
+      width: 20%;
+    }
+    &::after { 
+      width: 20%;
+    }
+  }
+}

@@ -1,3 +1,12 @@
 {
-  "login-title": "Đăng nhập"
+  "login-title": "Đăng nhập",
+  "question-login": {
+    "account": "Bạn chưa có tài khoản?"
+  },
+  "link-name-login": {
+    "sign-up": "Đăng kí"
+  },
+  "notify-login": {
+    "success": "Đăng nhập thành công"
+  }
 }
