@@ -3,3 +3,24 @@
   width: 100%;
   margin: 0 auto;
 }
+.row {
+  display: flex;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+}
+.row > * {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+}
+@include columns($col-max);
+@include columnsResponsive($col-max, sm, map-get($breakpoint, sm));
+@include columnsResponsive($col-max, md, map-get($breakpoint, md));
+
+@media (max-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 327px;
+  }
+}
